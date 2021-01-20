@@ -1,0 +1,26 @@
+sort1 uses: Bubble sort.
+
+How do you know?:
+I was able to figure this algorithm uses bubble sort because of how it handled
+the randomized 50,000 numbers vs the sorted 50,000 numbers.
+When sorting the 50,000 random numbers the algorithm was not very efficient
+finishing the sort in 15-16 secs. When sorting the 50,000 sorted numbers the
+algorithm performed exponentially better at 2.7 secs.
+
+sort2 uses: Merge sort.
+
+How do you know?:
+I was able to determine this, because this algorithm performed relatively the
+same when sorting either random, reversed, or sorted numbers. Because
+merge sort performs the same number of steps regardless of the arrangment of
+numbers, we got very similar results each time we sorted 50,000 numbers. And
+when we compare these results with sort3, we see sort2 is much more efficient,
+meaning sort2 is most likely merge sort with O(n log n).
+
+sort3 uses: Selection sort.
+
+How do you know?: I was able to determine sort3 was selection sort because it performed
+relatively the same when sorting 50,000 random numbers and 50,000 already sorted
+numbers. In this case, selection sort handles sorted and unsorted numbers the same
+at o(n^2), but this algorithm performed significantly slower compared to sort2
+leading me to believe it is selection sort.
